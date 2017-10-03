@@ -5,10 +5,18 @@ us:
   - "80:80"
   - "443:443"
   restart: always
-  
+
 uk:
   build: .
   dockerfile: dockerflix.uk
+  ports:
+  - "80:80"
+  - "443:443"
+  restart: always
+
+nba:
+  build: .
+  dockerfile: dockerflix.nba
   ports:
   - "80:80"
   - "443:443"

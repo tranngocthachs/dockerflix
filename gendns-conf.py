@@ -12,7 +12,7 @@ parser.add_argument('-c', '--configdir', help='Dockerflix config dir', default='
 parser.add_argument('-t', '--type', help='DNS config type', choices=['dnsmasq', 'bind'], default='dnsmasq', required=False)
 parser.add_argument('-d', '--dnsmasqdir', help='Dnsmasq config dir', default='/etc/dnsmasq.d', required=False)
 parser.add_argument('-b', '--binddir', help='BIND config dir', default='/etc/bind', required=False)
-parser.add_argument('-y', '--region', help='Region', choices=['us', 'uk'], default='us', required=False)
+parser.add_argument('-y', '--region', help='Region', choices=['us', 'uk', 'nba'], default='us', required=False)
 args = parser.parse_args()
 
 if args.region != 'us' and args.remoteip == DEMO_IP:
